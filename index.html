@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỷ Niệm Đẹp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation" id="bgAnimation"></div>
+    <div class="particles" id="particles"></div>
+    <div class="hearts" id="hearts"></div>
+
+    <!-- Music Controls -->
+    <div class="music-control" id="musicControl">
+        <button class="music-btn" id="musicBtn">
+            <span class="music-icon">🎵</span>
+            <span class="music-text">Phát nhạc</span>
+        </button>
+    </div>
+
+    <!-- Audio Player -->
+    <audio id="bgMusic" loop>
+        <source src="cam-on-va-xin-loi.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <!-- Opening Section với Slideshow -->
+        <section class="section">
+            <div class="content-box">
+                <h1 class="title">Kỷ Niệm Đẹp 💫</h1>
+                <p class="subtitle">Những khoảnh khắc khó quên</p>
+                
+                <!-- Professional Photo Slideshow -->
+                <div class="slideshow-container">
+                    <div class="slideshow-wrapper">
+                        <!-- Slide 1 - VIDEO 2 -->
+                        <div class="slide active" data-theme="purple" data-type="video">
+                            <div class="slide-content">
+                                <video class="slide-video" id="mainVideo">
+                                    <source src="video2.mp4" type="video/mp4">
+                                    Trình duyệt không hỗ trợ video.
+                                </video>
+                                <div class="video-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 - VIDEO 3 -->
+                        <div class="slide" data-theme="blue" data-type="video">
+                            <div class="slide-content">
+                                <video class="slide-video">
+                                    <source src="video3.mp4" type="video/mp4">
+                                    Trình duyệt không hỗ trợ video.
+                                </video>
+                                <div class="video-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 3 - VIDEO 4 -->
+                        <div class="slide" data-theme="pink" data-type="video">
+                            <div class="slide-content">
+                                <video class="slide-video">
+                                    <source src="video4.mp4" type="video/mp4">
+                                    Trình duyệt không hỗ trợ video.
+                                </video>
+                                <div class="video-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 4 - VIDEO 5 -->
+                        <div class="slide" data-theme="orange" data-type="video">
+                            <div class="slide-content">
+                                <video class="slide-video">
+                                    <source src="video5.mp4" type="video/mp4">
+                                    Trình duyệt không hỗ trợ video.
+                                </video>
+                                <div class="video-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 5 - VIDEO chính -->
+                        <div class="slide" data-theme="green" data-type="video">
+                            <div class="slide-content">
+                                <video class="slide-video">
+                                    <source src="video.mp4" type="video/mp4">
+                                    Trình duyệt không hỗ trợ video.
+                                </video>
+                                <div class="video-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 6 - Ảnh 1 -->
+                        <div class="slide" data-theme="cyan">
+                            <div class="slide-content">
+                                <img src="hinh1.jpg" alt="Kỷ niệm 1" class="slide-image">
+                                <div class="slide-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 7 - Ảnh 2 -->
+                        <div class="slide" data-theme="red">
+                            <div class="slide-content">
+                                <img src="hinh2.jpg" alt="Kỷ niệm 2" class="slide-image">
+                                <div class="slide-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 8 - Ảnh 3 -->
+                        <div class="slide" data-theme="gold">
+                            <div class="slide-content">
+                                <img src="hinh3.jpg" alt="Kỷ niệm 3" class="slide-image">
+                                <div class="slide-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 9 - Ảnh 4 -->
+                        <div class="slide" data-theme="purple">
+                            <div class="slide-content">
+                                <img src="hinh4.jpg" alt="Kỷ niệm 4" class="slide-image">
+                                <div class="slide-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 10 - Ảnh 5 -->
+                        <div class="slide" data-theme="blue">
+                            <div class="slide-content">
+                                <img src="hinh5.jpg" alt="Kỷ niệm 5" class="slide-image">
+                                <div class="slide-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 11 - Ảnh 6 -->
+                        <div class="slide" data-theme="pink">
+                            <div class="slide-content">
+                                <img src="hinh6.jpg" alt="Kỷ niệm 6" class="slide-image">
+                                <div class="slide-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 12 - Ảnh 7 -->
+                        <div class="slide" data-theme="orange">
+                            <div class="slide-content">
+                                <img src="hinh7.jpg" alt="Kỷ niệm 7" class="slide-image">
+                                <div class="slide-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 13 - Ảnh 8 -->
+                        <div class="slide" data-theme="green">
+                            <div class="slide-content">
+                                <img src="hinh8.jpg" alt="Kỷ niệm 8" class="slide-image">
+                                <div class="slide-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Arrows -->
+                    <button class="slide-nav prev" onclick="changeSlide(-1)">❮</button>
+                    <button class="slide-nav next" onclick="changeSlide(1)">❯</button>
+                    
+                    <!-- Dots Indicator -->
+                    <div class="slide-dots">
+                        <span class="dot active" onclick="currentSlide(0)"></span>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                        <span class="dot" onclick="currentSlide(10)"></span>
+                        <span class="dot" onclick="currentSlide(11)"></span>
+                        <span class="dot" onclick="currentSlide(12)"></span>
+                    </div>
+                    
+                    <!-- Progress Bar -->
+                    <div class="slide-progress">
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+                </div>
+
+                <p class="memory-text">
+                    Thời gian trôi qua, nhưng những khoảnh khắc đẹp đẽ này<br>
+                    sẽ mãi mãi được ghi nhớ trong trái tim chúng ta.
+                </p>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="section">
+            <div class="content-box">
+                <h2 class="title" style="font-size: 3em;">Hành Trình Của Chúng Ta</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Ngày đầu</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Khởi đầu tuyệt vời</div>
+                            <div class="timeline-description">
+                                Ngày đầu tiên gặp gỡ, một khởi đầu đáng nhớ mở ra nhiều điều kỳ diệu.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Hành trình</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Những kỷ niệm chung</div>
+                            <div class="timeline-description">
+                                Cùng nhau vượt qua thử thách, chia sẻ niềm vui và nỗi buồn.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Hôm nay</div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Khoảnh khắc này</div>
+                            <div class="timeline-description">
+                                Và hôm nay, chúng ta vẫn tiếp tục viết nên những trang mới.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Message -->
+        <section class="section">
+            <div class="content-box final-message">
+                <div class="final-text">
+                    Cảm ơn vì tất cả ✨
+                </div>
+                <div class="signature">
+                    Với tất cả tình cảm
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
